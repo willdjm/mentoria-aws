@@ -30,17 +30,20 @@
               <li class="nav-item">
                 <a href="/events/create" class="nav-link">Criar Eventos</a>
               </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link">Entrar</a>
-              </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link">Cadastrar</a>
-              </li>
-            </ul>
+                          </ul>
           </div>
         </nav>
       </header>
-      @yield('content')
+      <main>
+        <div class="container-fluid">
+          <div class="row">
+            @if(session('msg'))
+              <p class="msg">{{ session('msg') }}</p>
+            @endif
+            @yield('content')
+          </div>
+        </div>
+      </main>
       <footer>
         <p>HDC Events &copy; 2020</p>
       </footer>

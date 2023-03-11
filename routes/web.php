@@ -17,18 +17,13 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create']);
+Route::get('/events/{id}', [EventController::class, 'show']);
+Route::post('/events', [EventController::class, 'store']);
+Route::delete('/events/{id}', [EventController::class, 'destroy']);
+Route::get('/events/edit/{id}', [EventController::class, 'edit']);
+Route::put('/events/update/{id}', [EventController::class, 'update']);
+
 
 Route::get('/contact', function () {
     return view('contact');
-});
-
-Route::get('/produtos', function () {
-
-    $busca = request('search');
-
-    return view('products', ['busca' => $busca]);
-});
-
-Route::get('/produtos_teste/{id?}', function ($id = null) {
-    return view('product', ['id' => $id]);
 });
