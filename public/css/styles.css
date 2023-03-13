@@ -27,6 +27,7 @@ header {
   border: 2px solid #C28008;
 }
 
+
 .btn-primary:hover {
   background-color: #C28008;
   border-color: #C28008;
@@ -54,8 +55,8 @@ header {
 }
 
 #navbar a {
-  font-size: 14px;
-  color: #757575;
+  font-size: 18px;
+  color: #F2A340;
 }
 
 #navbar a:hover {
@@ -150,11 +151,13 @@ header {
 /* Event page */
 #image-container,
 #info-container {
+  
   margin-top: 30px;
 }
 
+
 #image-container img {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 #info-container h1 {
@@ -163,8 +166,8 @@ header {
 }
 
 #info-container p {
-  margin: 0;
-  font-size: 14px;
+  margin: 10;
+  font-size: 20px;
   display: flex;
 }
 
@@ -178,6 +181,8 @@ header {
   font-size: 20px;
   color: #F2A340;
   margin-right: 5px;
+  margin-top: 5px;
+
 }
 
 #info-container #event-submit {
@@ -209,6 +214,7 @@ header {
 
 .dashboard-events-container form {
   display: inline-block;
+ 
 }
 
 /* Edit page */
